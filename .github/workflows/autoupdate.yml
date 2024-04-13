@@ -5,7 +5,7 @@ on:
 jobs:
   autoupdate:
     name: autoupdate
-    runs-on: [self-hosted, windows-latest, windows-2022, windows-2019]
+    runs-on: [self-hosted, Windows, x64]
     steps:
       - uses: docker://chinthakagodawita/autoupdate-action:v1
         env:
