@@ -2,6 +2,7 @@ name: KMPAutoPull
 on:
   push:
     branches: [ "main" ]
+workflow_dispatch:
 jobs:
   autoupdate:
     name: autoupdate
