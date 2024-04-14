@@ -8,9 +8,10 @@ jobs:
     name: PullGeiAutomatico
     runs-on: [self-hosted, Windows, x64]
     steps:
+      - uses: actions/checkout@v4
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Run a one-line script
+      - name: Run a multi-line script
         run: |
           git reset --hard origin/main
           mv $GITHUB_WORKSPACE $carpeta_mods
