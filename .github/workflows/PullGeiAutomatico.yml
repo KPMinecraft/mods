@@ -11,8 +11,12 @@ jobs:
       - uses: actions/checkout@v4
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Run a multi-line script
-        run: |
+      - name: Recuperar cambios
+        run:
           git reset --hard origin/main
+      - name: leer variable GitHub Workspace
+        run:
           echo $GITHUB_WORKSPACE
-          echo $carpeta_mods
+      - name: leer variable carpeta_mods
+        run:
+          echo $carpeta_mod
