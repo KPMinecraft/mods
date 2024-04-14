@@ -1,4 +1,4 @@
-name: KMPAutoPull
+name: autoupdate
 on:
   push:
     branches: [ "main" ]
