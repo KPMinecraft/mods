@@ -19,4 +19,7 @@ jobs:
           echo $GITHUB_WORKSPACE
       - name: leer variable carpeta_mods
         run:
-          echo $carpeta_mod
+          cd $carpeta_mod
+      - name: leer variable carpeta_mods 2
+        run:
+          pwd
