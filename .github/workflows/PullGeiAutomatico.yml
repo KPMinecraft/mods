@@ -16,4 +16,3 @@ jobs:
           git reset --hard origin/main
           echo $GITHUB_WORKSPACE
           echo $carpeta_mods
-          mv $GITHUB_WORKSPACE $carpeta_mods
