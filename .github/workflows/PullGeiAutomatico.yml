@@ -19,13 +19,13 @@ jobs:
           echo $Env:GITHUB_WORKSPACE
       - name: leer variable carpeta_mods
         run:
-          echo $Env:carpeta_mod
+          echo $Env:carpeta_mods
       - name: probar si anda el echo
         run:
           echo HOLA
       - name: cambiar carpeta
         run:
-          cd $Env:carpeta_mod
+          cd $Env:carpeta_mods
       - name: imprimir carpeta
         run:
           pwd
