@@ -16,10 +16,16 @@ jobs:
           git reset --hard origin/main
       - name: leer variable GitHub Workspace
         run:
-          echo $GITHUB_WORKSPACE
+          echo $Env:GITHUB_WORKSPACE
       - name: leer variable carpeta_mods
         run:
-          cd $carpeta_mod
-      - name: leer variable carpeta_mods 2
+          echo $Env:carpeta_mod
+      - name: probar si anda el echo
+        run:
+          echo HOLA
+      - name: cambiar carpeta
+        run:
+          cd $Env:carpeta_mod
+      - name: imprimir carpeta
         run:
           pwd
