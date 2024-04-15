@@ -8,7 +8,7 @@ jobs:
     name: PullGeiAutomatico
     strategy:
       matrix:
-        os: [self-hosted]
+        os: [self-hosted, Windows]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
