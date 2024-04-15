@@ -14,18 +14,6 @@ jobs:
       - name: Recuperar cambios
         run:
           git reset --hard origin/main
-      - name: leer variable GitHub Workspace
+      - name: copiar archivos sexo
         run:
-          echo $Env:GITHUB_WORKSPACE
-      - name: leer variable carpeta_mods
-        run:
-          echo $Env:carpeta_mods
-      - name: probar si anda el echo
-        run:
-          echo HOLA
-      - name: cambiar carpeta
-        run:
-          cd $Env:carpeta_mods
-      - name: imprimir carpeta
-        run:
-          pwd
+          mv $Env:GITHUB_WORKSPACE %Env:carpeta_mods
