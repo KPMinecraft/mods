@@ -16,4 +16,4 @@ jobs:
           git reset --hard origin/main
       - name: copiar archivos sexo
         run:
-          cp $Env:GITHUB_WORKSPACE %Env:carpeta_mods
+          cp $Env:GITHUB_WORKSPACE $Env:carpeta_mods
